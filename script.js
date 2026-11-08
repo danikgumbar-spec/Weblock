@@ -1,5 +1,5 @@
 // IMPORTANT: Replace this with the URL of your published Windows release on GitHub.
-const DOWNLOAD_URL = "PASTE_YOUR_GITHUB_RELEASE_DOWNLOAD_URL_HERE";
+const DOWNLOAD_URL = "https://github.com/danikgumbar-spec/Weblock/releases/download/v1.0.0/BlockCode_2.rar";
 
 const translations = {
   en: {
