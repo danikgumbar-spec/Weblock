@@ -6,7 +6,7 @@
 const DOWNLOAD_URL = "https://github.com/danikgumbar-spec/Weblock/releases/download/v1.0.0/Weblock.rar";
 
 // The name shown everywhere on the page (nav, footer, texts, tab title).
-const BRAND = "BlockCode";
+const BRAND = "Weblock";
 
 // Optional: where the "Contact" link in the footer goes, e.g. "mailto:you@example.com"
 // or a Telegram link. Leave empty to hide the link.
