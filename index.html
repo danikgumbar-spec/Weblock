@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="BlockCode — build websites visually with blocks, preview your work live, and explore the code behind it.">
+  <title>BlockCode — Build something brilliant.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    <span data-i18n="announcement">Meet a more visual way to build for the web.</span>
+    <a href="#features" data-i18n="discover">Discover BlockCode <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="BlockCode home">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      <span>BlockCode</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#features" data-i18n="navFeatures">Features</a>
+      <a href="#how" data-i18n="navHow">How it works</a>
+      <a href="#download" data-i18n="navDownload">Download</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">RU</button>
+      <a class="button button-small button-dark" href="#download" data-i18n="navCta">Get BlockCode</a>
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#features" data-i18n="navFeatures">Features</a>
+    <a href="#how" data-i18n="navHow">How it works</a>
+    <a href="#download" data-i18n="navDownload">Download</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="eyebrow">A NEW WAY TO CREATE</span></div>
+        <h1 data-i18n-html="heroTitle">Your ideas.<br><span class="gradient-text">Beautifully built.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Create websites by connecting visual blocks. See your changes live, explore real code, and bring your ideas to the web — all in one creative workspace.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download"><span data-i18n="heroCta">Download for Windows</span><span class="button-arrow">↓</span></a>
+          <a class="text-link" href="#features"><span data-i18n="heroSecondary">Explore the features</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><span class="windows-icon">⊞</span><span data-i18n="heroNote">Made for Windows · Download details coming soon</span></div>
+      </div>
+
+      <div class="hero-visual" aria-label="Illustration of the BlockCode visual editor">
+        <div class="visual-glow"></div>
+        <div class="editor-window">
+          <div class="editor-topbar">
+            <div class="window-controls"><i></i><i></i><i></i></div>
+            <div class="window-title">BlockCode <span>·</span> Untitled website</div>
+            <div class="topbar-pill">● <span data-i18n="live">Live</span></div>
+          </div>
+          <div class="editor-content">
+            <aside class="editor-sidebar">
+              <div class="sidebar-label" data-i18n="blocks">BLOCKS</div>
+              <div class="block-category active"><b class="category-dot purple"></b><span data-i18n="layout">Layout</span></div>
+              <div class="block-category"><b class="category-dot blue"></b><span data-i18n="text">Text</span></div>
+              <div class="block-category"><b class="category-dot orange"></b><span data-i18n="media">Media</span></div>
+              <div class="block-category"><b class="category-dot green"></b><span data-i18n="style">Style</span></div>
+              <div class="block-category"><b class="category-dot pink"></b><span data-i18n="logic">Logic</span></div>
+            </aside>
+            <div class="workspace">
+              <div class="workspace-label"><span data-i18n="yourPage">YOUR PAGE</span><span class="zoom">100%</span></div>
+              <div class="block block-purple"><span class="block-symbol">▦</span><span data-i18n="blockSection">Create section</span><span class="block-menu">•••</span></div>
+              <div class="block block-blue"><span class="block-symbol">T</span><span data-i18n="blockHeading">Add heading</span></div>
+              <div class="block block-blue nested"><span class="block-symbol">¶</span><span data-i18n="blockText">Add text</span></div>
+              <div class="block block-orange"><span class="block-symbol">▧</span><span data-i18n="blockImage">Add image</span></div>
+              <div class="connector"></div>
+              <div class="mini-hint" data-i18n="dragHint">Drag blocks to create your page</div>
+            </div>
+            <div class="preview">
+              <div class="preview-toolbar"><span data-i18n="preview">PREVIEW</span><span>↗</span></div>
+              <div class="preview-page">
+                <div class="preview-nav"><b>studio.</b><span>Menu&nbsp; ☰</span></div>
+                <div class="preview-art"><div class="art-circle"></div><div class="art-card"></div></div>
+                <div class="preview-copy">
+                  <div class="preview-kicker">CREATIVE STUDIO</div>
+                  <div class="preview-heading"><span data-i18n="previewHeading">Make room<br>for ideas.</span></div>
+                  <div class="preview-lines"><i></i><i></i><i></i></div>
+                  <div class="preview-button" data-i18n="previewButton">Explore more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="editor-bottom"><span>● <span data-i18n="allChangesSaved">All changes saved</span></span><span>HTML&nbsp; · &nbsp;CSS&nbsp; · &nbsp;JS</span></div>
+        </div>
+        <div class="floating-chip chip-one"><span class="chip-icon">✦</span><span data-i18n="chipAi">AI-assisted editing</span></div>
+        <div class="floating-chip chip-two"><span class="chip-icon chip-green">↗</span><span data-i18n="chipPreview">Live preview</span></div>
+      </div>
+      <div class="hero-scroll"><span></span><span data-i18n="scroll">SCROLL TO EXPLORE</span></div>
+    </section>
+
+    <section class="proof-strip">
+      <div><strong>01</strong><span data-i18n="proofOne">Think visually</span></div>
+      <div><strong>02</strong><span data-i18n="proofTwo">Build with blocks</span></div>
+      <div><strong>03</strong><span data-i18n="proofThree">See it come alive</span></div>
+      <div><strong>04</strong><span data-i18n="proofFour">Explore the code</span></div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-heading">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="featuresEyebrow">MADE TO MAKE CREATING FEEL NATURAL</span></div>
+        <h2 data-i18n-html="featuresTitle">Less wrestling with code.<br><span class="muted-heading">More making things happen.</span></h2>
+        <p data-i18n="featuresIntro">A visual workspace that helps you move from an idea to a working web page — while keeping the code within reach.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large">
+          <div class="feature-text"><span class="feature-number">01 / CREATE</span><h3 data-i18n="f1Title">Build with blocks.</h3><p data-i18n="f1Text">Put together page elements in a visual workspace. Arrange, connect, and shape your website without starting from a blank code editor.</p></div>
+          <div class="feature-art block-art"><div class="art-block a1">▦ &nbsp; Section</div><div class="art-block a2">T &nbsp; Heading</div><div class="art-block a3">¶ &nbsp; Text</div><div class="art-block a4">▧ &nbsp; Image</div><div class="art-spark">✳</div></div>
+        </article>
+        <article class="feature-card feature-dark">
+          <div class="feature-text"><span class="feature-number">02 / PREVIEW</span><h3 data-i18n="f2Title">See every change.</h3><p data-i18n="f2Text">Use live preview to see how your page is coming together as you work.</p></div>
+          <div class="browser-art"><div class="browser-bar"><i></i><i></i><i></i><span></span></div><div class="browser-body"><div class="browser-sun"></div><div class="browser-title"></div><div class="browser-line"></div><div class="browser-cta"></div></div></div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-text"><span class="feature-number">03 / UNDERSTAND</span><h3 data-i18n="f3Title">The code is yours.</h3><p data-i18n="f3Text">View and copy HTML, CSS, and JavaScript. Connect the visual result with the code that powers it.</p></div>
+          <div class="code-art"><div><em>&lt;section&gt;</em></div><div>&nbsp;&nbsp;<b>Build</b> <span>something</span></div><div>&nbsp;&nbsp;<em>&lt;h1&gt;</em>great<em>&lt;/h1&gt;</em></div><div><em>&lt;/section&gt;</em></div><div class="code-cursor"></div></div>
+        </article>
+        <article class="feature-card feature-accent">
+          <div class="feature-text"><span class="feature-number">04 / CREATE FASTER</span><h3 data-i18n="f4Title">A little help from AI.</h3><p data-i18n="f4Text">Use AI-assisted editing to help refine your work and explore new directions.</p></div>
+          <div class="ai-art"><div class="ai-orbit orbit-a"></div><div class="ai-orbit orbit-b"></div><div class="ai-core">✦</div><span class="ai-spark s1">✧</span><span class="ai-spark s2">✦</span><span class="ai-spark s3">✧</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="how-inner">
+        <div class="how-copy">
+          <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span><span data-i18n="howEyebrow">FROM IDEA TO WEB PAGE</span></div>
+          <h2 data-i18n-html="howTitle">A simpler way<br>to get <span>started.</span></h2>
+          <p data-i18n="howIntro">You bring the idea. BlockCode gives you a visual place to shape it, test it, and understand what you've made.</p>
+          <a class="button button-light" href="#download"><span data-i18n="howCta">Try BlockCode</span><span class="button-arrow">↗</span></a>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="step-index">01</span><div><h3 data-i18n="step1Title">Choose your blocks</h3><p data-i18n="step1Text">Find the elements you need in the block library.</p></div><span class="step-symbol">▦</span></div>
+          <div class="step"><span class="step-index">02</span><div><h3 data-i18n="step2Title">Shape your page</h3><p data-i18n="step2Text">Arrange elements and build the structure visually.</p></div><span class="step-symbol">⌘</span></div>
+          <div class="step"><span class="step-index">03</span><div><h3 data-i18n="step3Title">Preview and refine</h3><p data-i18n="step3Text">Check your result, make changes, and explore the code.</p></div><span class="step-symbol">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-orb orb-left"></div><div class="download-orb orb-right"></div>
+      <div class="download-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="downloadEyebrow">YOUR NEXT IDEA STARTS HERE</span></div>
+        <h2 data-i18n-html="downloadTitle">Ready to build<br><span class="gradient-text">something great?</span></h2>
+        <p data-i18n="downloadText">Bring your ideas into a visual workspace. Download BlockCode for Windows and start creating.</p>
+        <a class="button button-primary button-download" id="downloadButton" href="#" target="_blank" rel="noopener"><span data-i18n="downloadCta">Download for Windows</span><span class="button-arrow">↓</span></a>
+        <div class="download-meta"><span>⊞ <span data-i18n="windowsApp">Windows application</span></span><span>·</span><span data-i18n="releaseInfo">Release information will appear here</span></div>
+        <p class="download-status" id="downloadStatus" role="status" aria-live="polite" data-i18n="downloadStatus">The download link will be activated when the first release is published.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark"><span></span><span></span><span></span><span></span></span><span>BlockCode</span></a>
+    <p data-i18n="footerTagline">A visual space for web ideas.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> BlockCode</span><span data-i18n="footerMade">Made for curious creators.</span><a href="mailto:YOUR_SUPPORT_EMAIL" data-i18n="contact">Contact</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
